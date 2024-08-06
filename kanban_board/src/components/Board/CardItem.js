@@ -8,9 +8,7 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 const initialEditedValues = {
     title: "",
     description: "",
-    // startDate: new Date(),
-    // endDate: new Date()
-};
+}
 
 function CardItem(props) {
     const [show, setShow] = useState(false);
@@ -57,13 +55,13 @@ function CardItem(props) {
                                 icon={faEdit}
                                 className="mx-2"
                                 onClick={() => clickHandler("edit")}
-                                style={{ cursor: 'pointer' }}
+                                style={{ cursor: 'pointer', width: '16px' }}
                             />
                             <FontAwesomeIcon
                                 icon={faTrash}
                                 className="mx-2"
                                 onClick={() => clickHandler("delete")}
-                                style={{ cursor: 'pointer' }}
+                                style={{ cursor: 'pointer', width: '14px' }}
                             />
                         </div>
                     </Card.Title>

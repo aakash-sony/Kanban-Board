@@ -6,7 +6,7 @@
 }
 
 .task-header {
-  border-radius: 5px;
+  padding-top: 10px;
 }
 
 .search-container {
@@ -26,7 +26,6 @@
 
   .search-container {
     width: 100%;
-    margin-top: 10px;
     justify-content: space-between;
   }
 

@@ -38,6 +38,7 @@ function BoardLanes(props) {
                                 </h6>
                             </div>
                             <div
+
                                 className="card-body"
                                 onDrop={(event) => onDropHandler(event, stage.id)}
                                 onDragOver={(event) => onDragOverHandler(event)}
