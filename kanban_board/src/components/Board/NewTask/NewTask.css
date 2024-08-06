@@ -1,0 +1,39 @@
+.react-datepicker-wrapper {
+  display: block !important;
+}
+.react-datepicker-wrapper ~ .invalid-feedback {
+  display: block !important;
+}
+.task-header {
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 200px; /* Adjust width as needed */
+  margin-right: 10px; /* Spacing between input and button */
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #5a6268; /* Darker color on hover */
+  border-color: #4e5d6c; /* Adjust border color on hover */
+}
+
+.search-input:focus {
+  border-color: #007bff; /* Blue border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow on focus */
+}
+
+.search-button i {
+  color: white; /* Icon color */
+}
