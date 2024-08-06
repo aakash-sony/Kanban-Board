@@ -7,7 +7,6 @@ const stagesData = [
     { name: "In Progress", id: 2 },
     { name: "Peer Review", id: 3 },
     { name: "Done", id: 4 },
-    // { name: "Launch", id: 5 }
 ];
 const taskData = [
 ];
@@ -68,11 +67,6 @@ function Board() {
         // swapStages(fromLane.laneId, droppedLaneId)
     };
 
-    // const swapStages = (fromLane, toLane) => {
-    //     /*  const filterStage = stages.filter((x) => x.id === fromLane);
-    //       filterStage[0].id=toLane;
-    //       setStage([...stages,filterStage[0]]) */
-    // };
     const onDragOverHandler = (event) => {
         if (event.dataTransfer && event.dataTransfer.types[0] === "text/plain") {
             event.preventDefault();

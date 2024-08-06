@@ -8,8 +8,8 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 const initialEditedValues = {
     title: "",
     description: "",
-    startDate: new Date(),
-    endDate: new Date()
+    // startDate: new Date(),
+    // endDate: new Date()
 };
 
 function CardItem(props) {

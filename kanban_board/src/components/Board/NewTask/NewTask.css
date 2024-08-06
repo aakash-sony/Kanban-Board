@@ -4,8 +4,9 @@
 .react-datepicker-wrapper ~ .invalid-feedback {
   display: block !important;
 }
+
 .task-header {
-  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .search-container {
@@ -13,27 +14,38 @@
   align-items: center;
 }
 
-.search-input {
-  width: 200px; /* Adjust width as needed */
-  margin-right: 10px; /* Spacing between input and button */
+.search-button {
+  margin-left: 5px;
 }
 
-.search-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 576px) {
+  .task-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+
+  .search-container .form-control {
+    margin-right: 5px;
+  }
+
+  .search-button {
+    width: 25%;
+    margin-left: 0;
+  }
+}
+
+.search-container .form-control:focus,
+.search-button:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .search-button:hover {
-  background-color: #5a6268; /* Darker color on hover */
-  border-color: #4e5d6c; /* Adjust border color on hover */
-}
-
-.search-input:focus {
-  border-color: #007bff; /* Blue border color on focus */
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow on focus */
-}
-
-.search-button i {
-  color: white; /* Icon color */
+  background-color: #0056b3;
+  border-color: #004085;
 }

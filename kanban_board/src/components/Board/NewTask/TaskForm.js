@@ -10,17 +10,6 @@ import "react-datepicker/dist/react-datepicker.css";
 const validationSchema = Yup.object().shape({
     title: Yup.string().required("Title is required"),
     description: Yup.string().required("Description is required"),
-    startDate: Yup.date().nullable().required("Start Date is required"),
-    //endDate: Yup.date().nullable().required("End Date is required"),
-    endDate: Yup.date()
-        .when(
-            "startDate",
-            (startDate, schema) =>
-                startDate &&
-                schema.min(startDate, "End date must be after the start date.")
-        )
-        .nullable()
-        .required("End Date is required"),
 });
 
 function TaskForm(props) {
@@ -48,8 +37,8 @@ function TaskForm(props) {
                                             id="title"
                                             name="title"
                                             className={`form-control ${formik.touched.title && formik.errors.title
-                                                    ? "is-invalid"
-                                                    : ""
+                                                ? "is-invalid"
+                                                : ""
                                                 }`}
                                         />
                                         <ErrorMessage
@@ -65,54 +54,14 @@ function TaskForm(props) {
                                             id="description"
                                             name="description"
                                             className={`form-control ${formik.touched.description && formik.errors.description
-                                                    ? "is-invalid"
-                                                    : ""
+                                                ? "is-invalid"
+                                                : ""
                                                 }`}
                                             as="textarea"
                                         />
                                         <ErrorMessage
                                             component="div"
                                             name="description"
-                                            className="invalid-feedback"
-                                        />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <FormLabel>Start Date</FormLabel>
-
-                                        <DatePicker
-                                            selected={formik.values.startDate}
-                                            name="startDate"
-                                            id="startDate"
-                                            onBlur={formik.handleBlur}
-                                            onChange={(date) =>
-                                                formik.setFieldValue("startDate", date)
-                                            }
-                                            className={`form-control ${formik.touched.startDate && formik.errors.startDate
-                                                    ? "is-invalid"
-                                                    : ""
-                                                }`}
-                                        />
-                                        <ErrorMessage
-                                            component="div"
-                                            name="startDate"
-                                            className="invalid-feedback"
-                                        />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <FormLabel>End Date</FormLabel>
-                                        <DatePicker
-                                            selected={formik.values.endDate}
-                                            name="endDate"
-                                            onBlur={formik.handleBlur}
-                                            onChange={(date) => formik.setFieldValue("endDate", date)}
-                                            className={`form-control ${formik.touched.endDate && formik.errors.endDate
-                                                    ? "is-invalid"
-                                                    : ""
-                                                }`}
-                                        />
-                                        <ErrorMessage
-                                            component="div"
-                                            name="endDate"
                                             className="invalid-feedback"
                                         />
                                     </FormGroup>
