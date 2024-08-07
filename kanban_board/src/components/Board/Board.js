@@ -108,7 +108,7 @@ function Board() {
     };
 
     return (
-        <div className="container-fluid pt-3">
+        <div className="container-fluid pt-">
             <div className="row">
                 <div className="col-12">
                     <NewTask addNewTask={onAddingNewTask} handleSearch={handleSearch} searchQuery={searchQuery} />

@@ -1,14 +1,15 @@
 .card-task {
   margin-bottom: 15px;
   width: 250px;
-  color: #fff;
-  background-color: #6c757d !important;
+  color: black;
+  background-color: white !important;
   border-color: #6c757d !important;
   cursor: move;
 }
 
 .stage-header {
   background-color: #ccc !important;
+  height: 50px;
 }
 .card-task-option i {
   color: #fff !important;
