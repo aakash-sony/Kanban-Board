@@ -7,6 +7,9 @@
   cursor: move;
 }
 
+#task-card {
+  margin-top: 0px;
+}
 .stage-header {
   background-color: #ccc !important;
   height: 50px;

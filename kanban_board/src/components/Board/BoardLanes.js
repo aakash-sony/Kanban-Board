@@ -31,7 +31,7 @@ function BoardLanes(props) {
                         onDrop={(event) => onTaskContainerDropHandler(event, stage.id)}
                         style={{ marginRight: index !== props.stages.length - 1 ? '20px' : '0' }}
                     >
-                        <div className="card bg-light">
+                        <div id="task-card" className="card bg-light">
                             <div className="card-header stage-header">
                                 <h6 className="card-title text-uppercase text-truncate py-2">
                                     {stage.name}
