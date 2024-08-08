@@ -23,6 +23,7 @@ function NewTask(props) {
 
     const handleSearch = (event) => {
         event.preventDefault();
+        props.handleSearch()
         // Implement your search logic here
         console.log("Searching for:", searchQuery);
     };

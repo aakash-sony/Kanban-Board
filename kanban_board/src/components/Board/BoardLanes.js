@@ -33,7 +33,7 @@ function BoardLanes(props) {
                     >
                         <div id="task-card" className="card bg-light">
                             <div className="card-header stage-header">
-                                <h6 className="card-title text-uppercase text-truncate py-2">
+                                <h6 className="card-title py-2" style={{ fontSize: '18px' }}>
                                     {stage.name}
                                 </h6>
                             </div>

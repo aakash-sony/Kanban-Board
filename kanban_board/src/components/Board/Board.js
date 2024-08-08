@@ -93,8 +93,12 @@ function Board() {
         setSearchQuery(query);
     };
 
-    const filteredTasks = taskState.filter(task =>
-        task.title.toLowerCase().includes(searchQuery.toLowerCase())
+    const filteredTasks = taskState.filter(task => {
+        console.log(task.title);
+        task.title.includes(searchQuery)
+        console.log(searchQuery);
+    }
+
     );
 
     const ContextData = {
@@ -108,7 +112,7 @@ function Board() {
     };
 
     return (
-        <div className="container-fluid pt-">
+        <div className="container-fluid pt-0.3">
             <div className="row">
                 <div className="col-12">
                     <NewTask addNewTask={onAddingNewTask} handleSearch={handleSearch} searchQuery={searchQuery} />
