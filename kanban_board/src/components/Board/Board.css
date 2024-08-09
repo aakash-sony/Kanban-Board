@@ -46,12 +46,13 @@
 .inner-column-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the columns horizontally */
-  max-width: 100%; /* Ensure it doesn't overflow its container */
+  justify-content: center;
+  max-width: 100%;
 }
 
 .card-column {
   width: 292px;
+  margin: 0 10px;
 }
 .card-column:first-of-type {
   margin-left: 0;

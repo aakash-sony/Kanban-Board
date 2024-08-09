@@ -9,8 +9,6 @@ const initialValues = {
 
 function NewTask(props) {
     const [show, setShow] = useState(false);
-    const [searchQuery, setSearchQuery] = useState("");
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -19,13 +17,6 @@ function NewTask(props) {
         props.addNewTask(values);
         setShow(false);
         submitProps.resetForm();
-    };
-
-    const handleSearch = (event) => {
-        event.preventDefault();
-        props.handleSearch()
-        // Implement your search logic here
-        console.log("Searching for:", searchQuery);
     };
 
     return (
@@ -38,11 +29,10 @@ function NewTask(props) {
                     <Form.Control
                         type="text"
                         placeholder="Search tasks"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
                         style={{ width: '140px', marginRight: '5px', borderRadius: '5px' }}
                     />
-                    <Button variant="btn btn-success" type="submit" onClick={handleSearch} className="search-button" style={{ borderRadius: '5px', marginRight: '58px' }}>
+                    <Button variant="btn btn-success" type="submit"
+                        className="search-button" style={{ borderRadius: '5px', marginRight: '58px' }}>
                         Search
                     </Button>
                 </InputGroup>
