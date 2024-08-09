@@ -6,7 +6,7 @@ function CardItem(props) {
             <Card key={props.task.id} className="card-task">
                 <Card.Body>
                     <Card.Title className="d-flex justify-content-between align-items-center" style={{ fontSize: '18px', lineHeight: '1.1em' }}>
-                        Test-{props.task.id}
+                        Test-000{props.task.id}
                     </Card.Title>
                     <Card.Title className="d-flex justify-content-between align-items-center" style={{ fontSize: '16px', lineHeight: '1.1em' }}>
                         {props.task.title}

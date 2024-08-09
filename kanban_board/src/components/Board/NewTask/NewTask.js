@@ -8,6 +8,7 @@ const initialValues = {
 };
 
 function NewTask(props) {
+    const [searchQuery, setSearchQuery] = useState("");
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -17,6 +18,14 @@ function NewTask(props) {
         props.addNewTask(values);
         setShow(false);
         submitProps.resetForm();
+    };
+
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    const handleSearchClick = () => {
+        props.onSearch(searchQuery);
     };
 
     return (
@@ -29,9 +38,11 @@ function NewTask(props) {
                     <Form.Control
                         type="text"
                         placeholder="Search tasks"
+                        value={searchQuery}
+                        onChange={handleSearchChange}
                         style={{ width: '140px', marginRight: '5px', borderRadius: '5px' }}
                     />
-                    <Button variant="btn btn-success" type="submit"
+                    <Button variant="btn btn-success" type="submit" onClick={handleSearchClick}
                         className="search-button" style={{ borderRadius: '5px', marginRight: '58px' }}>
                         Search
                     </Button>
@@ -49,3 +60,4 @@ function NewTask(props) {
 }
 
 export default NewTask;
+
