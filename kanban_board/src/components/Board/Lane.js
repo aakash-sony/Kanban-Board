@@ -3,10 +3,11 @@ import { BoardContext } from './Board'
 import CardItem from './CardItem'
 function Lane(props) {
     const { taskState, onDragStartHandler, onDragOverHandler } = useContext(BoardContext);
+    console.log(taskState, 'taskState')
     return (
         <>
             {
-                taskState
+                props.tasks
                     .filter(x => x.stage === props.stage.id)
                     .map((item, index) => (
                         <div draggable

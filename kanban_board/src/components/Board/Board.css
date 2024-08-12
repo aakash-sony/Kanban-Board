@@ -11,12 +11,18 @@
 
 .card-task .card-text {
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.1;
   max-height: 4.6em;
+}
+
+.card-body {
+  height: 66vh;
+  overflow: auto;
 }
 
 #task-card {
@@ -56,4 +62,20 @@
 }
 .card-column:first-of-type {
   margin-left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }

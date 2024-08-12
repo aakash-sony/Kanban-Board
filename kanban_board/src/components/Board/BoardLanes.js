@@ -17,6 +17,10 @@ function BoardLanes(props) {
         setDivWidth(totalWidth);
     }, [props.stages.length]);
 
+    useEffect(() => {
+        console.log(props.tasks, 'props.tasks');
+    }, [props.tasks])
+
     return (
         <div className="column-wrapper d-flex justify-content-center">
             <div style={{ width: divWidth, display: 'flex', margin: '0 auto' }}>
