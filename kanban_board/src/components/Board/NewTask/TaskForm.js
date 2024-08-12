@@ -4,8 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./NewTask.css";
 
-import "react-datepicker/dist/react-datepicker.css";
-
 const validationSchema = Yup.object().shape({
     title: Yup.string().required("Title is required"),
     description: Yup.string().required("Description is required"),
@@ -14,9 +12,8 @@ const validationSchema = Yup.object().shape({
 function TaskForm(props) {
     return (
         <>
-
             <Formik
-                initialValues={props.editedValues || props.initialValues}
+                initialValues={props.initialValues}
                 validationSchema={validationSchema}
                 onSubmit={props.onSubmit}
                 enableReinitialize

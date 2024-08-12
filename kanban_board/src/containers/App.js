@@ -6,8 +6,8 @@ import Board from "../components/Board/Board";
 function App() {
   return (
     <div>
-      <Header></Header>
-      <Board></Board>
+      <Header />
+      <Board />
     </div>
   );
 }
