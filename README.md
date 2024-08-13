@@ -11,7 +11,7 @@ A fully functional Kanban board application built with React.js.
    - [Installation](#installation)
 4. [Usage](#usage)
 5. [Folder Structure](#folder-structure)
-6. [Images](#images)
+6. [Image](#image)
 
 ## Overview
 
@@ -65,11 +65,8 @@ Here's an overview of the project's folder structure:
 
 kanban_board/
 │
-├── node_modules/
-│ └── ... (dependencies installed via npm or yarn)
-│
 ├── public/
-│ ├── index.html # Main HTML file
+│ ├── index.html 
 │ ├── manifest.json  
 │ └── robots.txt  
 │
