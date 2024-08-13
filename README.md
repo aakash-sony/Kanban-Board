@@ -63,38 +63,9 @@ Ensure you have the following installed on your system:
 
 Here's an overview of the project's folder structure:
 
-kanban_board/
-│
-├── public/
-│ ├── index.html 
-│ ├── manifest.json  
-│ └── robots.txt  
-│
-├── src/
-│ ├── components/  
-│ │ ├── Board/  
-│ │ │ │──────────────NewTask/  
-│ │ │ │── Board.css      │
-│ │ │ ├── Board.js       │──NewTask.js
-│ │ │ ├── BoardLanes.js  │──NewTask.css
-│ │ │ ├── CardItem.js    │──TaskForm.js
-│ │ │ └── Lane.js  
-│ │ │
-│ │ └── Header/
-│ │ └── Header.js  
-│ │
-│ ├── containers/  
-│ │ └── App.js  
-│ │ └── App.css
-│ ├── App.test.js  
-│ ├── index.css  
-│ ├── index.js  
-│ ├── reportWebVitals.js
-│ └── setupTests.js  
-├── .gitignore  
-├── package-lock.json  
-└── package.json 6.
+![image](https://github.com/user-attachments/assets/12e84a85-6be6-4e49-a09f-e88d5bc6bdaa)
 
-## Images
+
+## Image
 ![image](https://github.com/user-attachments/assets/de7431d7-c715-4104-aeb1-b747157d23e9)
 
