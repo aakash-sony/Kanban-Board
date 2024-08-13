@@ -10,12 +10,7 @@ A fully functional Kanban board application built with React.js.
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
 4. [Usage](#usage)
-5. [Folder Structure](#folder-structure)
-6. [Components](#components)
-7. [Context](#context)
-8. [Styling](#styling)
-9. [Contributing](#contributing)
-10. [License](#license)
+5. [Folder Structure](#folder-structure) 6.[Images](#images)
 
 ## Overview
 
