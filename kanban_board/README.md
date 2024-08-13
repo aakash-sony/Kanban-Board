@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Kanban Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional Kanban board application built with React.js.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+4. [Usage](#usage)
+5. [Folder Structure](#folder-structure)
+6. [Components](#components)
+7. [Context](#context)
+8. [Styling](#styling)
+9. [Contributing](#contributing)
+10. [License](#license)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Kanban board is a task management tool that helps you organize and visualize tasks in different stages of completion. This project is implemented using React.js and follows a component-based architecture.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Task Management**: Add, move and search tasks across different columns (e.g., To Do, In Progress, Peer Review, Done).
+- **Drag and Drop**: Drag and drop tasks to different columns.
+- **Persistent Data**: Tasks are stored in localStorage to persist across page refreshes.
+- **Search Filter**: Filter tasks in all columns based on the search input.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have the following installed on your system:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (version X.X.X or higher)
+- **npm** or **yarn** (for package management)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/kanban-board.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd kanban-board
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Add Tasks**: Click on the "Add Task" button to create a new task.
+- **Move Tasks**: Drag and drop tasks to move them across different columns.
+- **Search Tasks**: Use the search bar to filter tasks by title.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Here's an overview of the project's folder structure:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+kanban_board/
+│
+├── node_modules/
+│ └── ... (dependencies installed via npm or yarn)
+│
+├── public/
+│ ├── index.html # Main HTML file
+│ ├── manifest.json  
+│ └── robots.txt  
+│
+├── src/
+│ ├── components/  
+│ │ ├── Board/  
+│ │ │ ├──────────────NewTask/  
+│ │ │ ├── Board.css |
+│ │ │ ├── Board.js |──NewTask.js
+│ │ │ ├── BoardLanes.js |──NewTask.css
+│ │ │ ├── CardItem.js |──TaskForm.js
+│ │ │ └── Lane.js  
+│ │ │
+│ │ └── Header/
+│ │ └── Header.js  
+│ │
+│ ├── containers/  
+│ │ └── App.js  
+│ │ └── App.css
+│ ├── App.test.js  
+│ ├── index.css  
+│ ├── index.js  
+│ ├── reportWebVitals.js
+│ └── setupTests.js  
+├── .gitignore  
+├── package-lock.json  
+└── package.json
