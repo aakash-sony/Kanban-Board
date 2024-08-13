@@ -37,7 +37,7 @@ function NewTask(props) {
                 <InputGroup className="search-container mb-2" style={{ width: 'auto' }}>
                     <Form.Control
                         type="text"
-                        placeholder="Search tasks"
+                        placeholder="Search by Title"
                         value={searchQuery}
                         onChange={handleSearchChange}
                         style={{ width: '140px', marginRight: '5px', borderRadius: '5px' }}
