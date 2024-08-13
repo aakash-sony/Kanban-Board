@@ -76,11 +76,11 @@ kanban_board/
 ├── src/
 │ ├── components/  
 │ │ ├── Board/  
-│ │ │ ├──────────────NewTask/  
-│ │ │ ├── Board.css      |
-│ │ │ ├── Board.js       |──NewTask.js
-│ │ │ ├── BoardLanes.js  |──NewTask.css
-│ │ │ ├── CardItem.js    |──TaskForm.js
+│ │ │ │──────────────NewTask/  
+│ │ │ │── Board.css      │
+│ │ │ ├── Board.js       │──NewTask.js
+│ │ │ ├── BoardLanes.js  │──NewTask.css
+│ │ │ ├── CardItem.js    │──TaskForm.js
 │ │ │ └── Lane.js  
 │ │ │
 │ │ └── Header/
