@@ -31,7 +31,7 @@ This project is implemented using React.js and follows a component-based archite
 
 Ensure you have the following installed on your system:
 
-- **Node.js** (version X.X.X or higher)
+- **Node.js** (version v20.12.2)
 - **npm** or **yarn** (for package management)
 
 ### Installation
